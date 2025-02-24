@@ -1,0 +1,22 @@
+{
+  "name": "netflix-gpt",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx parcel src/index.html",
+    "start": "parcel build src/index.html"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@tailwindcss/postcss": "^4.0.8",
+    "parcel": "^2.13.3",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "tailwindcss": "^4.0.8"
+  },
+  "devDependencies": {
+    "process": "^0.11.10"
+  }
+}
