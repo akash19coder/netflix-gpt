@@ -1,7 +1,19 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import Header from "./Header";
+import { useNowPlayingMovies } from "./utils/useNowPlayingMovies";
+import MainComponent from "./MainComponent";
+import SecondaryComponent from "./SecondaryComponent";
+import { useSelector } from "react-redux";
 
 const Browse = () => {
-  return <div>Browse</div>;
+  useNowPlayingMovies();
+  return (
+    <div>
+      <Header />
+      <MainComponent />
+      <SecondaryComponent />
+    </div>
+  );
 };
 
 export default Browse;
